@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main id="mobile">
+        <div id="screen">
+            <div class="calc">
+                <div id="output">
+                    <p class="result"></p>
+                </div>
+                <table id="input">
+                    <tr class="line">
+                        <td><button class="greybtn" onclick="allClear()">AC</button></td>
+                       <td> <button class="greybtn" onclick="del()"><</button></td>
+                       <td> <button class="greybtn" onclick="insert('%')">%</button></td>
+                        <td><button class="orangebtn" onclick="insert('/')">/</button></td>
+                    </tr>
+
+                    <tr class="line">
+                        <td><button onclick="insert('7')">7</button></td>
+                        <td><button onclick="insert('8')">8</button></td>
+                        <td><button onclick="insert('9')">9</button></td>
+                        <td><button class="orangebtn" onclick="insert('*')">*</button></td>
+                    </tr>
+
+                    <tr class="line">
+                        <td><button onclick="insert('4')">4</button></td>
+                        <td><button onclick="insert('5')">5</button></td>
+                        <td><button onclick="insert('6')">6</button></td>
+                        <td><button class="orangebtn" onclick="insert('-')">-</button></td>
+                    </tr>
+
+                    <tr class="line">
+                        <td><button onclick="insert('1')">1</button></td>
+                        <td><button onclick="insert('2')">2</button></td>
+                        <td><button onclick="insert('3')">3</button></td>
+                        <td><button class="orangebtn" onclick="insert('+')">+</button></td>
+                    </tr>
+
+                    <tr class="line">
+                        <td colspan="2"><button id="zerobtn" onclick="insert('0')">0</button></td>
+                        <td><button onclick="insert('.')">.</button></td>
+                        <td><button class="orangebtn" onclick="calcular()">=</button></td> 
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
